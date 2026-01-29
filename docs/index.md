@@ -5,7 +5,6 @@ glightbox: false
 # My documentation
 
 This is an example of participant's documentation for the Fabricademy program.
-_Done by MUGABIYIMANA Elysee_
 
 You can edit it on [Github](http://github.com/R-INYURU). The software used turns simple text files written in [Markdown](https://en.wikipedia.org/wiki/Markdown) format, into the site you are navigating.
 
