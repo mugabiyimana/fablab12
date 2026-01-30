@@ -4,7 +4,7 @@ glightbox: false
 
 # My documentation
 
-This is an example of participant's documentation for the Fabricademy program.
+<!-- This is an example of participant's documentation for the Fabricademy program.
 
 You can edit it on [Github](http://github.com/R-INYURU). The software used turns simple text files written in [Markdown](https://en.wikipedia.org/wiki/Markdown) format, into the site you are navigating.
 
@@ -15,28 +15,35 @@ If this is your site, go on and edit this page clicking the Gitlab link on the u
 
 No worries, you can't break anything, all the changes you make are saved under [Version Control](https://en.wikipedia.org/wiki/Version_control) using [GIT](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control). This means that you have all the different versions of your page saved and available all the time in the Gitlab interface.
 
-This is an example of how you can structure your documentation, including ways of adding images, videos, tables e.t.c. Once you start editing make sure that you delete the examples and you make this page yours.
+This is an example of how you can structure your documentation, including ways of adding images, videos, tables e.t.c. Once you start editing make sure that you delete the examples and you make this page yours. -->
 
 
 
 ## About me
 
-![](./images/avatar-photo.jpg){ width=200 align=right }
+![]("/images/profile picture Elyse.jpeg"){ width=200 align=right }
+**Hello! I am MUGABIYIMANA ELYSE.**
+I am a dedicated Computer science with 10 years of experience in in programing , and a strong background in  networking instruments, and computer systems. I am currently expanding my expertise in embedded systems and IoT, focusing on designing connected hardware solutions that bridge communication infrastructure with smart, real-world applications. I bring a methodical, analytical mindset and the ability to manage multiple projects with professionalism, accuracy, and technical precision.
 
-_you can introduce yourself in many ways! audio, images, video.._
+## About Me
 
-Hi! I am Emma Brewer. I am an art director & graphic designer based in New York City working on branding, visual identities, editorial design and web design.
+!!! info "Quick Bio"
+    * **Location:**  Kigali, Rwanda
+    * **Current Role:** ICT trainer
+    * **Education:** MSc in IoT Embedded Computing Systems (ACEIoT)
 
-_the image above has a prefixed width and is aligned on the right side_
-
-
-_below an example from the documentation of both [Sara Alvarez](https://class.textile-academy.org/2021/sara.alvarez/) TextileLab Amsterdam 2020-21 and [Diane Wakim](https://class.textile-academy.org/2021/diane.wakim/) Le TextileLab Lyon_
+### My Journey
+Born in 1990 in Kcukiro District, I developed an early interest in electronicscomputer science  . I earned my Bachelor’s degree in computer science from the University of Rwanda, College of Science and Technology  in 2016. Building on this foundation, I am further developing my skills in embedded systems and IoT, focusing on integrating electronics, communication, and smart connected devices for practical real-world applications.
 
 
 
-## My background
+<!-- _below an example from the documentation of both [Sara Alvarez](https://class.textile-academy.org/2021/sara.alvarez/) TextileLab Amsterdam 2020-21 and [Diane Wakim](https://class.textile-academy.org/2021/diane.wakim/) Le TextileLab Lyon_ -->
 
-I was born in a nice city called..
+
+
+<!-- ## My background
+
+I was born in a nice city called.. -->
 
 <!-- This below clears both sides under "aligned" images - see two images above.
 Can also be used just as "clear: right;" rather than "clear: both;", if you are using an image on the right, for example.

@@ -3,9 +3,6 @@
 Visit [UR-ACEIoT Modeling & Fabrication](https://fablabrwanda.github.io/UR-ACEIoT/index.html) for class and other information
 or read the [Documentation Tutorial](http://https://fablabrwanda.github.io/UR-ACEIoT/documentation-tutorial/) for more about this site.
 
-======================================================================
-TEST
-======================================================================
 
 * This website is built and published automatically using [GitLab CI](https://about.gitlab.com/gitlab-ci/), every time you edit the files in the docs folder
 * The markdown content is generated into a site using the Mkdocs tool, a static site generator written in Python

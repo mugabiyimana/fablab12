@@ -1,8 +1,8 @@
 # Replace the text below to customize your site
-site_name: Loes Bogers
-site_description: Your name Fabricademy site
-site_author: Your name
-copyright: Copyright 2025 Your name - Creactive Commons Attribution Non-commercial
+site_name: Benjamin Mugabo
+site_description: Benjamin Mugabo Fabricademy site
+site_author: Benjamin Mugabo
+copyright: Copyright 2025 Benjamin Mugabo - Creactive Commons Attribution Non-commercial
 
 site_url: https://r-inyuru.github.io/ModelingFabricationTechnique
 repo_url: https://github.com/R-INYURU/
@@ -49,7 +49,7 @@ theme:
 plugins:
   - search
   - glightbox:
-  - git-revision-date:
+  # - git-revision-date:
       enabled_if_env: CI
 
 # See more extensions at https://squidfunk.github.io/mkdocs-material/reference/
