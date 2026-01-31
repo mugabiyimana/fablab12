@@ -1,86 +1,161 @@
 # 2. Activity of Day 2
+                        Digital Modeling for Fabrication
 
-# Digital Modeling: L-Bracket Project
+## Overview
 
-## Project Overview
-**Objective:** Design a structural L-shaped bracket using **FreeCAD**.
-**Design Intent:** Create a robust mounting point with 90° geometry, reinforced mounting holes, and stress-relieving fillets.
-**Software:** FreeCAD (Part Design Workbench).
+Day 2 focused on digital modeling for fabrication, introducing both 3D parametric modeling and 2D vector design.
+The goal was to understand how simple, fabrication-ready geometry is created using appropriate software tools.
+
+Two modeling activities were completed:
+
+    A 3D L-Shaped Mounting Bracket using FreeCAD
+
+    A 2D Press-Fit Box Panel using Inkscape
+
+## Activity 1 – FreeCAD Model  
+### L-Shaped Mounting Bracket (3D)
+
+!!! info "Design Goal"
+    Create a simple **L-shaped mounting bracket** that demonstrates basic 3D modeling operations used in fabrication.
+
+![FreeCAD L-shaped mounting bracket reference](../images/day_2/activity1/demo.png){ width=200 align=right }
+
+
+### Design Characteristics
+- Two flat faces at **90°**
+- Two circular holes for screws or bolts
+- Simple geometry with no complex curves
+- One **filleted corner** for safety and manufacturability
+
+
+### Implementation
+
+#### Modeling Workflow (FreeCAD)
+
+The following steps describe the process used to model the **L-Shaped Mounting Bracket** in FreeCAD.
+
+=== "Step 1 – Base Sketch"
+
+!!! note
+    - Created a new sketch on the reference plane  
+    - Drew an **L-shaped 2D profile**  
+    
+![L-shaped base sketch](../images/day_2/activity1/sketch1.png){width=400}
 
 ---
 
-## Modeling Workflow
-My workflow follows the standard **Parametric Modeling** approach: *Sketch, Constrain, Extrude, Refine.*
+=== "Step 2 - Constraining the Sketch"
 
+- Applied geometric constraints to control the orientation and relationships between sketch elements  
+  (horizontal, vertical, parallel, and perpendicular).
+- Applied dimensional constraints to define exact sizes such as lengths, widths, and thickness.
+- Ensured the sketch became **fully constrained**, preventing unintended movement (degrees of freedom = 0)
 
-
-### Phase 1: Creating the Base Body (Additive)
-
-=== "1. Setup & Sketch"
-    I started by creating a new **Body** in the Part Design Workbench and selecting the **XY Plane**.
-    
-    * **Tool:** Polyline `CreatePolyline`
-    * **Action:** Drew a rough "L" shape starting from the origin (0,0).
-    * **Constraints:**
-        * Applied **Vertical** and **Horizontal** constraints to ensure 90° angles.
-        * **Vertical Height:** 60mm
-        * **Horizontal Length:** 40mm
-        * **Thickness:** 10mm (uniform)
-
-    !!! "Parametric Logic"
-        By fully constraining the sketch (turning the lines green), I ensure that the dimensions can be easily modified later without breaking the model geometry.
-
-=== "2. Padding (Extrusion)"
-    Once the 2D profile was defined, I transformed it into a 3D solid.
-    
-    * **Tool:** Pad `PartDesign_Pad`
-    * **Parameter:** Length = 40mm
-    * **Result:** A solid 3D block representing the raw material volume.
-
-    ![Screenshot of the Extruded L-Shape](../images/left.png)
+![constrained](../images/day_2/activity1/sketch2.png){width = 300 align= left}
+![constrained](../images/day_2/activity1/sketch3.png){width = 300 }
 
 ---
 
-### Phase 2: Adding Features (Subtractive & Refinement)
+=== "Step 3 – Pad "
 
-=== "3. Creating Holes"
-    To allow for mounting screws, I used a **Subtractive** process to remove material.
+    - Used the **Pad** tool to extrude the fully constrained 2D sketch into a 3D solid.
     
-    1.  **Select Face:** Clicked the top flat face of the bracket.
-    2.  **Sketch:** Drew a circle and constrained the radius to **2.5mm** (for M5 bolts).
-    3.  **Pocket:** Used the Pocket tool `PartDesign_Pocket` set to **"Through All"**.
-    
-    > *Repeating this process on the vertical face ensures the bracket can be mounted on two axes.*
-
-=== "4. The Fillet (Edge Refinement)"
-    Sharp corners in mechanical parts are stress concentrators. To mitigate this, I added a fillet.
-    
-    * **Tool:** Fillet `PartDesign_Fillet`
-    * **Target:** The inner corner of the "L".
-    * **Radius:** 5mm
-    
-    ![Screenshot of the Filleted Corner](../images/top.png)
+![Extruded 3D model](../images/day_2/activity1/sketch5.png){ width = 400}
 
 ---
 
-## The "Rib" Reinforcement (Advanced)
-*Note: While the basic requirement was a simple L-shape, I added a structural rib (as seen in the project reference) to increase rigidity.*
+=== "Step 4 – Holes"
 
-1.  **Sketch Plane:** Created a sketch on the side face of the bracket.
-2.  **Geometry:** Drew a triangle connecting the vertical and horizontal arms.
-3.  **Pad:** Extruded the triangle using **"Symmetric to Plane"** to center it perfectly on the bracket.
+    - Selected the appropriate face and sketched **two circular profiles** using the circle tool.
+    - Applied an equal constraint to ensure both holes had identical diameters.
+    - Positioned the holes symmetrically using geometric constraints.
+    - Added **dimensional constraints** to set hole diameters suitable for standard fasteners and fully constrain the sketch.
+    - Used the **Pocket** tool with the parameter set from back face to front face to create through-holes.
+    - Once that was done, applied **Chamfer** to the two circular edges of the screw holes.
+
+![Mounting holes added](../images/day_2/activity1/sketch6.png){width= 400 }
 
 ---
 
-## Fabrication Considerations
+=== "Step 5 – Fillet"
 
-![Screenshot of the Filleted](../images/day_2/Day2_Activity1.png)
-Connecting this design to the physical production process:
+    - Selected the sharp edges to rould of the bracket and
+    - Applied **Fillet** to remove the sharpness and make them smooth.
 
-| Feature | Fabrication Logic |
-| :--- | :--- |
-| **Flat Faces** | Designed to lay flat on the 3D printer bed (minimizing supports). |
-| **Hole Diameter (5mm)** | Designed with a **0.2mm tolerance** (actual print: 4.8mm) to ensure screws fit. |
-| **Fillet** | Prevents layer separation at the corner during 3D printing. |
+![Filleted corner](../images/day_2/activity1/a19a.png){ width = 300 align = left }
+![Filleted corner](../images/day_2/activity1/a19b.png){ width = 300 }
+
+---
+
+=== "Result"
+
+![Final Result](../images/day_2/activity1/sketch_final.png){width = 500}
+
+---
+
+### Download reference
+
+[Download the FabLab Day 2 Activity 1](../day_2\activity1.){: .md-button }
+
+---
+
+## Activity 2 – Inkscape Model  
+### Press-Fit Box Panel (2D Vector)
+
+!!! info "Design Goal"
+    Create a **2D press-fit box panel** using vector geometry that can be laser-cut and assembled
+    without fasteners. The focus is on **dimensional accuracy** and **material-aware design**.
 
 
+### Design Characteristics
+
+- Flat **rectangular panel**
+- **Rectangular slots** cut along the edges
+- Slot widths sized to match material thickness
+- Geometry designed to slide and lock with other panels
+- Entirely **2D vector-based design** 
+
+Key considerations:
+
+- 1:1 scale design to ensure accurate real-world dimensions
+- Use of clean paths for precise vector geometry
+- Slot accuracy – Proper sizing for press-fit assembly
+
+### Modeling Approach (Inkscape)
+
+=== "Step 1 – Create Rectangles"
+
+- Created rectangle shapes representing box panels.
+- Added tabs that allow the boxes to fit into each other.
+
+![create rectangle boxes](../images/day_2/activity2/b1.png){ width=400 }
+
+---
+
+=== "Step 2 – Union"
+
+- Used the **Union** tool in Inkscape to merge the tabs and box shapes.
+- Ensured the sizes were correct so the boxes can fit into each other.
+
+![union](../images/day_2/activity2/b2.png){ width=400 }
+
+---
+
+=== "Step 3 – Holes"
+
+- Used the **Difference** tool to create holes in the box panels.
+
+![holes](../images/day_2/activity2/b3.png){ width=400 }
+
+---
+
+=== "Result"
+
+![Final result](../images/day_2/activity2/result.png){width=500 }
+![Final result](../images/day_2/activity2/result2.png){width=500 }
+
+
+---
+
+### Download Reference - activity 2
+[Download Press-Fit Box Panel (Inkscape File)](../files/Press-FitBoxPanelDrawing.svg){: .md-button }

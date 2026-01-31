@@ -1,88 +1,81 @@
-# 1. Day 1 Activity
+# 1. Activity of Day 1
 
-# Fundamentals of Modeling & Fabrication
+## Foundations of Modeling & Fabrication
 
-## Student Introduction
-My name is MUGABIYIMANA ELYSE, and I am a Master of Science student specializing in IoT Embedded Computing Systems (ECS). This portfolio presents my learning progress and practical experiences in Modeling & Fabrication.
-
-## Course Overview
-This documentation examines the fundamental idea that design and fabrication are deeply interconnected.
-
-Rather than focusing only on manufacturing, this module emphasizes that modern design is computationally driven, informed by material properties, and conscious of production processes.
-
-### Core Principles
-!!! quote "Design-to-Fabrication Continuum"
-Design is not a linear sequence but a continuous and iterative process consisting of the following stages:
-
- 1. **Design:** Defining goals and intentions.  
-2. **Modeling:** Expressing geometry, logic, and functionality.  
-3. **Prototyping:** Validating ideas through experimentation.  
-4. **Fabrication:** Converting digital models into physical objects.  
-5. **Evaluation:** Analyzing results and refining the design.
+Modeling and Fabrication are inseparable parts of the design process, where computational thinking, material knowledge, and production methods all influence outcomes. Designing is not just about creating forms on a screen, it requires considering how ideas will physically manifest, making fabrication a central factor in shaping design decisions.
 
 
-# Digital Modeling
+**Modeling** is more than representing shapes;
+It represnts form, logic, behavior, and intelligence. 
 
-## Modeling Process
-
-Modeling goes beyond drawing shapes; it serves as a structured representation of form, logic, and behavior. My workflow integrates two main modeling approaches:
-
-Geometric Modeling: Creating fixed shapes with precise physical dimensions.
-
-Parametric and Rule-Based Modeling: Applying adjustable parameters to allow flexibility and variation without rebuilding the model.
-
-## Design Rationale
-Each design decision was made with the awareness that the chosen fabrication technique directly influences the design itself.
-
-### Parametric Approach
-Through parametric thinking, my models function as experimental tools, enabling me to:
-
-Evaluate assumptions related to fit and performance.
-
-Rapidly modify parameters in response to changing physical or fabrication constraints. 
-
-![Screenshot of Parametric Model](../images/parametric.png)
-*A parametric model.*
-
-# Fabrication Strategy
-
-## Fabrication Methods
-To convert digital designs into tangible objects, I analyzed the four primary digital fabrication approaches [cite: 44]:
-
-**Additive Manufacturing**: Building objects layer by layer, such as 3D printing.
-
-**Subtractive Manufacturing**: Removing material, for example through CNC milling.
-
-**Formative Processes**: Shaping materials using molds or applied forces.
-
-**Hybrid Techniques**: Integrating multiple fabrication methods for improved outcomes.
-
-## Material and Tolerance Awareness
-Physical fabrication introduces real-world limitations that are often absent in digital environments.
-
-<!-- !!! warning "Designing for Imperfection"
-    As noted in our coursework, real-world fabrication inevitably introduces **error and deformation**. 
+There are different approaches, including:
+- Geometric Modelling
+- parametric & rule-based modelling
+- simulation & data-driven Modelling
     
-    **Tolerance:** I designed my parts with specific **tolerance limits** to ensure proper fit despite machine inaccuracy.
-    **Material Behavior:** The choice of material actively influenced the design outcome, requiring adjustments for shrinkage and flexibility. -->
 
-# Reflections and Results
+**Fabrication** transforms these models into physical artifacts, using understanding of materials, machines, and processes.
 
-## Iterative Design Thinking
-A key takeaway from this module is that design development is cyclical rather than sequential. Continuous feedback at each stage enabled progressive improvement before final fabrication.
+### Design-to-Fabrication Process
+The design process is iterative rather than linear, allowing continuous feedback at every stage. It typically follows these steps:
+ - Idea :  Conceptualize the design goals and requirements
+ - Model : Creating digital or representations of the design
+ - Prototype: Build initial version
+ - Fabricate: Produce the physical artifact based on the model
+ - Evaluate: test it and use feedback to improve the design
 
-### Learning Through Failure
-Each prototype failure was viewed not as an error, but as a valuable learning opportunity. This evidence-based design approach helped reveal the practical limitations of the machines and processes used.
 
-## Ethics and Sustainability
-In addition to technical learning, I considered the broader implications of my design work:
+## Activity 1 – Building a Documentation Website with MkDocs Material  
 
-Sustainability: Minimizing material waste and energy consumption.
+Documentation is a critical part of the design and fabrication process.
 
-Responsibility: Promoting designs that support reuse, repair, and longevity instead of disposability.
+### About  Website 
 
-## Achieved Learning Outcomes
-By completing this project, I developed the ability to
-1.  **Design with fabrication constraints** in mind.
-2.  **Analyze material properties** and their influence on final form.
-3.  **Convert conceptual ideas** into practical, manufacturable systems.
+For this activity, I created a documentation website using MkDocs Material to record my digital modeling and fabrication learning journey. 
+The site captures course understanding, daily activities, materials used, reflections, and results.
+
+Web Pages:
+mk
+- **Home** – Contains an introduction and my background
+
+[Home](../images/day_1/liveSite.png){ width=500}
+
+- **Daily Activity** - Shows my course understanding and activities completed throughout the course
+
+![Daily Activities](../images/day_1/web.png){ width=600}
+
+
+
+## Activity 2 – Publishing Documentation via GitHub Pages 
+
+### From Local Project to Public Knowledge
+
+In this activity, I have learned how to publish and share technical documentation site using GitHub and GitHub Pages. This allowed the documentation created locally to be accessed as a live website by anyone online.
+
+### Task Description
+Uploading MkDocs documentation project to GitHub and publishing it as a live website using GitHub Pages.
+
+#### Uploading local documentation site to Github
+- Created a GitHub repository to host the project  
+- upload MkDocs project files to GitHub : 
+Uploaded the local MkDocs project files to the repository using Git commands in the **Git Bash terminal**, ensuring the files were properly tracked and ready for deployment.
+![git project file](../images/day_1/git.png){ width=600}
+
+#### Deploying Website 
+- Enabled GitHub Pages  : Activated the GitHub Pages feature in the repository settings, which allows the project files to be hosted as a live website directly from GitHub.
+- Deployed the site with a public URL : Once GitHub Pages was enabled, the site became accessible online via a public URL, making the documentation available to anyone without needing access to the repository. 
+
+![Daily Activities](../images/day_1/gitpages.png){ width=600}
+
+
+- GitHub repository link  
+https://github.com/mugabiyimana/fablab12
+
+- Live GitHub Pages URL  
+https://github.com/mugabiyimana
+
+#### Result - Git Live Website
+![Daily Activities](../images/day_1/liveSite.png){ width = 600}
+
+
+

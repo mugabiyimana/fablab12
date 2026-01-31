@@ -2,7 +2,7 @@
 
 # Laser Cutting Machine Activity
 
-![Screenshot of the Filleted](../images/day_4/2.jfif)
+![Screenshot of the Filleted](../images/day_4/tools.jpg)
 
 
 
